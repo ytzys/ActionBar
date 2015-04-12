@@ -1,0 +1,19 @@
+<resources xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <style name="MyTheme" parent="@android:style/Theme.Holo.Light">
+        <!-- parent="android:Theme.Holo.Light" 也可以，当使用support库时，可以使用parent="@style/Theme.Holo.Light -->
+
+        <item name="android:actionBarStyle">@style/MyActionBarStyle</item>
+    </style>
+
+    <style name="MyActionBarStyle" parent="@android:style/Widget.Holo.Light.ActionBar.Solid.Inverse">
+        <item name="android:background">@drawable/actionbar_background</item>
+        <item name="android:titleTextStyle">@style/MyActionBarTitleTextStyle</item>
+        <item name="android:actionMenuTextColor">@color/red</item>
+    </style>
+
+    <style name="MyActionBarTitleTextStyle" parent="@android:style/TextAppearance.Holo.Widget.ActionBar.Title">
+        <item name="android:textColor">@color/red</item>
+    </style>
+
+</resources>
