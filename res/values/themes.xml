@@ -4,12 +4,16 @@
         <!-- parent="android:Theme.Holo.Light" 也可以，当使用support库时，可以使用parent="@style/Theme.Holo.Light -->
 
         <item name="android:actionBarStyle">@style/MyActionBarStyle</item>
+        
+        <!-- 不要放错了地方，放在Theme的定义下边，而不是actionBarStyle下边 -->
+        <item name="android:windowActionBarOverlay">true</item>
     </style>
 
     <style name="MyActionBarStyle" parent="@android:style/Widget.Holo.Light.ActionBar.Solid.Inverse">
-        <item name="android:background">@drawable/actionbar_background</item>
+        <item name="android:background">@color/transparent</item>
         <item name="android:titleTextStyle">@style/MyActionBarTitleTextStyle</item>
         <item name="android:actionMenuTextColor">@color/red</item>
+        
     </style>
 
     <style name="MyActionBarTitleTextStyle" parent="@android:style/TextAppearance.Holo.Widget.ActionBar.Title">

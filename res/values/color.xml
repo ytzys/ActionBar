@@ -1,5 +1,6 @@
 <resources>
 
     <color name="red">#E72722</color>
+    <color name="transparent">#330000ff</color>
 
 </resources>
